@@ -1,0 +1,496 @@
+@charset "utf-8";
+/* Global Styles */
+a{
+	text-decoration: none;
+	color: #22262a;
+}
+a:active{
+	color: #2e90e5;
+}
+
+body{
+	background-color: #f6f7f8;
+}
+
+/*header*/
+header {
+	font-family: proxima nova, sans-serif;
+	color: #22262a;
+	background-color: white;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 600;
+	width: 100%;
+	overflow: hidden;
+	display: inline-block;
+}
+hr{
+	border-top: 0.5px;
+} 
+/* Logo */
+.logo {
+	float: left;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 140px;
+	height: 80px;
+	text-align: center;
+	color: rgba(255,255,255,1.00);
+}
+.logo img {
+	width: 100%;
+	height: 80%;
+	align-items: center;
+}
+/* div for Links in header */
+.headerLinks {
+	float: right;
+	text-align: right;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	background-color: rgba(255,255,255,1.00);
+}
+/* Links in header */
+.headerLinks a {
+	text-decoration: none;
+	color: #22262a;
+	padding-right: 20px;
+	font-size: 14px;
+} 
+.pagelinks{
+	font-family: proxima nova,sans-serif;
+	font-weight: 600;
+	font-size: 14px;
+	padding-top: 38px;
+	padding-bottom: 38px;
+}
+.pagelinks a:link{
+	text-decoration: none;
+	color: #22262a;
+	padding-top: 45px;
+}
+.mainWrapper .pagelinks a:active{
+	color: #2e90e5;
+}
+
+/* Header content */
+header .mainWrapper {
+	width: 80%;
+	
+	/* display: inline-block; */
+	overflow: hidden;
+}
+
+ul{
+	list-style-type: none;
+	padding-left: 20px;
+	line-height: 24px;
+	padding-inline-start: 0%;
+}
+
+.clearfix{
+	overflow: auto;
+}
+/*whole page content*/
+body .mainWrapper {
+	width: 80%;
+	overflow: hidden;
+	/* display: inline-block; */
+	margin: 0 auto;
+	/* padding-left: 10%; */
+
+}
+
+/* Offer text banner*/
+.offerRow{
+	padding-left: 24px;
+	width: 100%;
+	overflow: hidden;
+}
+.offer {
+	font-family: proxima nova, sans-serif;
+	clear: both;
+	background-color: #33a0ff;
+	color:#f6f7f8;
+ 	float: left;
+	width: 100%;
+	border-radius: 1%;
+}
+.offer h2{
+	text-align: start;
+	font-weight: 100;
+}
+.col-left{
+	padding-top: 80px;
+	align-content: center;
+	float: left;
+}
+.col-right{
+	float: right;
+	height: min-content;
+}
+
+/* Main content of the site */
+#content {
+	clear: both;
+	overflow: auto;
+}
+/* Sidebar */
+#content .sidebar {
+	font-family: proxima nova, sans-serif;
+	color:#22262a;
+	float: left;
+	text-align: center;
+	background-color: rgba(246,246,246,1.00);
+	/* padding-top: 36px; */
+	height: 100%;
+}
+/* main content of the site */
+#content .mainContent {
+	/* float: left; */
+	/* width: 70%; */
+	text-align: center;
+	/* padding-left: 4%; */
+	display: inline-block;
+}
+.sampleproduct{
+	background-color: white;
+	font-size: 14px;
+	font-family: proxima nova,sans-serif;
+	font-weight: 600;
+	width: 25%
+	color: #22262a;
+}
+/* Rating bar*/
+.checked {
+	color: gold;
+}
+/*menubar's properties for menus in sidebar */
+#content .sidebar #menubar {
+	text-align: left;
+	color:#22262a;
+	position: relative;
+	left: 0%;
+}
+
+ */
+
+/*menu elements */
+.menu ul li {
+	list-style-type: none;
+	font-size: 16px;
+	position: relative;
+	left: -35px;
+	padding-top: 12px;
+}
+/* Product rows for catalog */
+#content .mainContent .productRow {
+	overflow: hidden;
+	background-color: #f6f7f8;
+	padding-left: 24px;
+	padding-top:24px;
+	padding-bottom: 24px;
+}
+/* Each product Information in the catalog */
+.mainContent .productRow .productInfo {
+	float: left;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 22%;
+}
+/* Prices of a products in catalog */
+.productRow .productInfo .price {
+	font-family: proxima nova, sans-serif;
+	color: rgba(146,146,146,1.00);
+	font-size: 16px;
+	position: relative;
+	top: -10px;
+}
+/* Content holder for products in catalog*/
+.productRow .productInfo .productContent {
+	position: relative;
+	top: 15px;
+	font-size: 16px;
+	font-family: proxima nova, sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	color: #22262a;
+	background-color: white;
+	white-space: pre-wrap;
+}
+/* Buy button for products in catalog */
+.productRow .productInfo .buyButton {
+	position: relative;
+	top: -48px;
+	width: 84%;
+	background-color: white;
+	height: 35px;
+	color: rgba(255,255,255,1.00);
+	border-style: none;
+	font-size: 14px;
+	text-transform: uppercase;
+	margin-top: 8px;
+}
+
+.productInfo{
+	/* background-color: white; */
+	/* border-style: solid;
+	border-color: #22262a; */
+	padding:24px;
+}
+/* footer */
+footer {
+	clear: both;
+	overflow: auto;
+	display: inline-block;
+	width:100%;
+	margin-left: 10%;
+	font-family: proxima nova, sans-serif;
+	font-style: normal;
+	font-weight: 200;
+	line-height: 1.8;
+	text-align: center;
+}
+/*Each footer content */
+footer div {
+	width: 33.33%;
+	float: left;
+	text-align: left;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+footer .col-1 img{
+	width: 160px;
+	height: 75px;
+	margin-left: -20px;
+}
+
+footer .col-2 img{
+	padding-top: 20px;
+	padding-right: 25px;
+}
+footer p{
+	color: #22262a;
+	font-size: 14px;
+	margin-block-start: 0em;
+	margin-inline-end: 0em;
+}
+footer ul{
+	display: flex;
+}
+/* Links in footer */
+footer div a {
+	color: rgba(146,146,146,1.00);
+	display: block;
+	text-decoration: none;
+	text-align: center;
+}
+/* Product's images in catalog */
+.productInfo div img {
+	width: 100%;
+}
+/*Links in sidebar */
+.sidebar #menubar .menu ul li a {
+	color:#22262a;
+	text-decoration: none;
+	font-weight: 600;
+}
+.sidebar #menubar .menu ul li a:hover {
+	color: rgba(107,97,97,1.00);
+	text-decoration: none;
+}
+/* Menu headings in sidebar */
+#menubar .menu h2 {
+	padding-top: 20px;
+	padding-left: 20px;
+	font-family: proxima nova, sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+}
+/*Links under menus in sidebar */
+#menubar .menu ul li a {
+	font-size: 16px;
+	padding-left: 20px;
+}
+/* Menus in sidebar */
+.sidebar #menubar .menu {
+	margin-bottom: 24px;
+	background-color: white;
+}
+
+/*heading for ul*/
+#menubar .menu #heading{
+	color: #2e90e5;
+}
+
+/* Container for links in footer */
+footer .footerlinks {
+	margin-top: -15px;
+}
+
+/* Media query for tablets */
+@media screen and (max-width:700px) {
+/* search field in sidebar */
+#content .sidebar #search {
+	display: none;
+}
+/* sidebar */
+#content .sidebar {
+	float: none;
+	width: 100%;
+	height: auto;
+	overflow: auto;
+	padding-left: 12%;
+	padding-top: 0px;
+}
+/* horizontal separators in sidebar */
+#content .sidebar hr {
+	display: none;
+}
+
+/*The sidebar and maincontent of page */
+#content {
+	position: relative;
+	top: -22px;
+	width: 100%;
+	overflow: hidden;
+}
+/*menu headings in sidebar */
+.sidebar #menubar .menu h2 {
+	display: inline;
+	font-size: medium;
+	padding-left: 20px;
+	padding-top: 20px;
+}
+/* Unordered List of links */
+.sidebar #menubar .menu ul {
+	display: inline;
+	list-style-type: none;
+}
+/*list elements */
+#menubar .menu ul li {
+	display: inline;
+	font-size: medium;
+	
+}
+/*The link to be hidden in tablet view */
+.sidebar #menubar .menu ul .notimp {
+	display: none;
+}
+/* menus in sidebar */
+.sidebar #menubar .menu {
+	width: 100%;
+	text-align: center;
+	position: relative;
+	top: 16px;
+}
+/*menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -7%;
+	overflow: hidden;
+	width: 95%;
+	padding-top: 0px;
+}
+/* offer banners content */
+.mainWrapper #offer p {
+	font-size: large;
+}
+/* main content region of page */
+.mainWrapper #content .mainContent {
+	overflow: hidden;
+	width: 95%;
+	margin-top: 40px;
+}
+/* Prices of products in catalog view */
+.productRow .productInfo .price {
+	font-size: 19px;
+}
+/* Content holders in catalog view */
+.productRow .productInfo .productContent {
+	font-size: 16px;
+}
+
+/* Links in header */
+header .headerLinks a {
+	padding-left: 0px;
+	padding-right: 30px;
+}
+/* Offer- Text banner */
+.mainWrapper #offer {
+	padding-left: 22%;
+}
+/* Paragraphs in footer */
+footer .footerlinks p {
+	display: inline;
+}
+}
+.foot .mainWrapper div{
+	width:50;
+	float: left;
+	color: #c1c8ce;
+}
+.foot .mainWrapper .payments{
+	float: right;
+}
+/*media query for small screen devices */
+@media screen and (max-width:480px) {
+/*Container for links in header */
+.mainWrapper header #headerLinks {
+	width: 100%;
+	text-align: center;
+	background-color: rgba(190,190,190,1.00);
+	padding-bottom: 21px;
+}
+/* Logo placeholder*/
+.mainWrapper header #logo {
+	width: 100%;
+	text-align: center;
+}
+/* Links in header */
+header #headerLinks a {
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 0px;
+}
+/*Offer - Text Banner */
+.mainWrapper #offer {
+	padding-left: 24px;
+	text-align: center;
+}
+/* Menubar in sidebar */
+#content .sidebar #menubar {
+	position: relative;
+	left: -8%;
+	text-align: center;
+}
+/*Menu headings in sidebar */
+#menubar .menu h2 {
+	width: 100%;
+	display: block;
+}
+/* Each product in catalog view */
+.mainContent .productRow .productInfo {
+	width: 100%;
+	display: inline-block;
+	padding-left: 0px;
+	padding-right: 0px;
+	position: relative;
+	left: -2%;
+}
+
+/* Unordered list for menu elements */
+.menu ul {
+	position: relative;
+	padding-left: 24%;
+}
+
+/* Main content which excludes the sidebar */
+.mainWrapper #content .mainContent {
+	margin-top: -81px;
+	text-align: center;
+	width: 100%;
+	padding-left: 0px;
+}
+}
