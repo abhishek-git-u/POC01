@@ -1,271 +1,502 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
 
-<head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link href="css/eCommerceStyle.css" rel="stylesheet" type="text/css">
-</head>
+    <head>
+        <title>E commerce site </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<body>
-  <header>  
-    <div class="mainWrapper">
-        <div class="logo">
-          <img src="Assets/logo.png" alt="sample logo">
-        </div>
-        <div class="headerLinks">
-          <a href="#" class="Alert">
-            <img src="Assets/Icon material-notifications-none.png">
-          </a>
-          <img src="Assets/profile_close_2.png">
-          <a href="#" title="profile">
-            My profile
-          </a>
-          <img src="Assets/bag_3.png">
-          <a href="#" title="cart">
-            0 Items
-          </a>
-          <a href="#" title="search">
-            <img src="Assets/search-icon.png">
-          </a>
-        </div>
-    </div>
-  </header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+        <link href="css/style.css" rel="stylesheet" type="text/css">
 
-  <div class="clear-fix"></div>
-    <div class="mainWrapper">
-      <div class="pagelinks">
-        <a href="#">Home </a> / <a href="#">Accesories</a> 
-      </div>
-      <div class="clear-fix"></div> 
-      <div id="content">
-          <section class="sidebar">
-            <div id="menubar">
-              <nav class="menu">
-                <h2>ALL CATEGORIES</h2>
-                <ul>
-                  <li><a href="#" title="Link">Accesories</a></li>
-                    <li><a href="#" title="Link">Cables & Dockes</a></li>
-                    <li><a href="#" title="Link">Cases & Films</a></li>
-                    <li><a href="#" title="Link">Charging Devices</a></li>
-                    <li><a href="#" title="Link">Connected Home</a></li>
-                    <li><a href="#" title="Link">Headphones</a></li>
-                  </li>
-                </ul>
-              </nav>
-              
+        <!-- JQuery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- To change the page number color -->
+        <script>
+            $(function() {
+                $('.n-panel-numbers').click(function(){
+                    $(this).toggleClass('clicked');
+                });
+            });
+        </script>
+    </head>
+
+    <body>
+        <!-- Header Part -->
+        <header>
+            <div class="head-1">
+                <div class="container">
+                    <div class="row">
+                        <!-- Logo -->
+                        <div class="col">
+                            <div class="logo">
+                                <img src="Assets/logo.png" alt="beep">
+                            </div>
+                        </div>
+                        <!-- Header links -->
+                        <div class="col">
+                            <div class="headerLinks">
+                                <a href="#" class="Alert">
+                                    <img src="Assets/Icon material-notifications-none.png">
+                                </a>
+                                <img src="Assets/profile_close_2.png">
+                                <a href="#" title="profile">
+                                    My profile
+                                </a>
+                                <img src="Assets/bag_3.png">
+                                <a href="#" title="cart">
+                                    0 Items
+                                </a>
+                                <a href="#" title="search">
+                                    <img src="Assets/search-icon.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </section>
-          <section class="mainContent">
-             
-            <div class="offerRow">
-              <section class="offer">
-                <!-- The offer section displays a banner text for promotions -->
-                <div class="col-left">
-                  <h2>iPhone 8</h2>
-                  <p>Performance and design. Taken right to the edge</p>
+        </header>
+        <!-- Main Container -->
+        <div class="container">
+            <!--Page Links-->
+            <div class="row">
+                <div class="col">
+                    <div class="pagelinks">
+                        <a href="#">Home </a> / <a href="#">Accesories</a>
+                    </div>
                 </div>
-                <div class="col-right">
-                  <img src="Assets/pic.png">
-                </div>
-              </section>
             </div>
-            <div class="productRow">
-              <article class="productInfo">
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
-              </article>
-              <article class="productInfo">
-                <!-- Each individual product description -->
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
-              </article>
-              <article class="productInfo">
-                <!-- Each individual product description -->
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
-              </article>
+            <!-- Main Content -->
+            <div class="row">
+                <!-- Categories Sidebar -->
+                <div class = "col-md-3">    
+                    <div class="categories">
+                        <h3>ALL CATEGORIES</h3>
+                        <ul>
+                            <li><a href="#" title="Accesories">Accesories</a></li>
+                            <li><a href="#" title="Cables">Cables & Docks</a></li>
+                            <li><a href="#" title="Cases">Cases & Films</a></li>
+                            <li><a href="#" title="Charging">Charging Devices</a></li>
+                            <li><a href="#" title="IOT">Connected home</a></li>
+                            <li><a href="#" title="Headphones">Headphones</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Offer Section -->
+                <div class="col-md-9">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <section class="offer">
+                                <!-- The offer section displays a banner text for promotions -->
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="content">
+                                            <h2>iPhone 8</h2>
+                                            <p>Performance and design. Taken right to the edge</p>
+                                            <a href="#"><p class="shopnow">SHOP NOW</p><br></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="Assets/pic.png">
+                                    </div>
+                                </div>
+                            </section>
+                          </div>
+                          <div class="carousel-item">
+                            <section class="offer">
+                                <!-- The offer section displays a banner text for promotions -->
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="content">
+                                            <h2>iPhone 8</h2>
+                                            <p>Performance and design. Taken right to the edge</p>
+                                            <a href="#"><p class="shopnow">SHOP NOW</p><br></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="Assets/pic.png">
+                                    </div>
+                                </div>
+                            </section>
+                          </div>
+                          <div class="carousel-item">
+                            <section class="offer">
+                                <!-- The offer section displays a banner text for promotions -->
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class="content">
+                                            <h2>iPhone 8</h2>
+                                            <p>Performance and design. Taken right to the edge</p>
+                                            <a href="#"><p class="shopnow">SHOP NOW</p><br></a>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <img src="Assets/pic.png">
+                                    </div>
+                                </div>
+                            </section>
+                          </div>
+                        </div>
+                      </div>
+                </div>
             </div>
-            <div class="productRow">
-              <!-- Each product row contains info of 3 elements -->
-              <article class="productInfo">
-                <!-- Each individual product description -->
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
+            <!-- Dividing main contents in two rows -->
+            <div class="row">
+                <!-- Column for left side bar -->
+                <div class="col-md-3">
+                    <div class="row">
+                        <!-- Price Filter Side Bar-->
+                        <div class = "col">
+                            <div class="sidebar">
+                                <h3>PRICES</h3>
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <div class = "Minvalue">
+                                            <label for="min">Min</label>
+
+                                            <input type="number" id="min" name="min" min="0">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2" id = "dash">
+                                        <span>-</span>
+                                    </div>
+                                    <div class="col-md-5">
+                                        <div class = "Maxvalue">
+                                            <label for="max">Max</label>
+                                            <input type="number" class="max" name="max" max="499">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Color -->
+                    <div class = "row">
+                        <div class = "col">
+                            <div class ="sidebar">
+                                <h3>COLOR</h3>
+                                <input type="radio" name="color" id="blue" value="red" />
+                                <input type="radio" name="color" id="red" />
+                            
+                                <input type="radio" name="color" id="black" />
+                                
+                                <input type="radio" name="color" id="yellow" />
+                                
+                                <input type="radio" name="color" id="pink" />
+                                
+                                <input type="radio" name="color" id="cream" />
+                            
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Brand -->
+                    <div class="row">
+                        <div class = "col">
+                            <div class = "sidebar">
+                                <h3>BRAND</h3>
+                                <div class="menu">
+                                    <div class = "col-md-11 menuitem">
+                                        <ul class="brand">
+                                            <li><a href="#"><span>Apple</span></a></li>
+                                            <li><a href="#"><span>Beats</span></a></li>
+                                            <li><a href="#"><span>Samsung</span></a></li>
+                                            <li><a href="#"><span>Siemens</span></a></li>
+                                        </ul>
+                                    </div>
+                                    <div class = "col-md-1 menuitem">
+                                        <ul class="brand">
+                                            <li><a href="#"><span>99</span></a></li>
+                                            <li><a href="#"><span>99</span></a></li>
+                                            <li><a href="#"><span>99</span></a></li>
+                                            <li><a href="#"><span>99</span></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- More -->
+                    <div class="row">
+                        <div class = "col">
+                            <div class = "sidebar more">
+                                <span><a href = "#">MORE</a></span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article class="productInfo">
-                <!-- Each individual product description -->
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
+                <!-- Column for filters bar and products -->
+                <div class="col-md-9">
+                    <!-- Filter Bar -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="maincontent filter">
+                                <span>13 Items</span>
+                                <label for= "sort">Sort By</label>
+                                <select name="sort" id="sort">
+                                    <option value="Name">Name</option>
+                                    <option value="PriceLtoH">Price Low to High</option>
+                                    <option value="PriceHtoL">Price High to Low</option>
+                                    <option value="Rating">Ratings</option>
+                                </select>
+                                <label for="show">Show</label>
+                                <select name="show" id="size">
+                                    <option value="11">10</option>
+                                    <option value="12">12</option>
+                                    <option value="14">14</option>
+                                    <option value="16">16</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="product">
+                                <img alt="sample" src="Assets/Rectangle5.png">
+                                <p class="productContent">Beats Solo2 On Ear Headphones</p>
+                                <p>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star"></span></p>
+                                <p class="price">$499 <s class="striked">$599</s></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page Numbers -->
+                    <div class="row">
+                        <div class="col-md-4 pgnumbers">
+                            <a href="#">
+                                <div class="n-panel-numbers">1</div>
+                            </a><a href="#">
+                                <div class="n-panel-numbers">2</div>
+                            </a><a href="#">
+                                <div class="n-panel-numbers">3</div>
+                            </a><a href="#">
+                                <div class="n-panel-numbers">4</div>
+                            </a><a href="#">
+                                <div class="n-panel-numbers">5</div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </article>
-              <article class="productInfo">
-                <!-- Each individual product description -->
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
-                </div>
-              </article>
             </div>
-            <div class="productRow">
-              <article class="productInfo">
-                <!-- Each individual product description -->
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
-                </div>
-              </article>
-              <article class="productInfo">
-                <!-- Each individual product description -->
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
-                </div>
-              </article>
-              <article class="productInfo">
-                <!-- Each individual product description -->
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
-                </div>
-              </article>
-            </div>
-            <div class="productRow">
-              <article class="productInfo">
-                <!-- Each individual product description -->
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
-                </div>
-              </article>
-              <article class="productInfo">
-                <!-- Each individual product description -->
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
-                </div>
-              </article>
-              <article class="productInfo">
-                <!-- Each individual product description -->
-                <div class="sampleproduct"><img alt="sample" src="Assets/Rectangle5.png">
-                  <p class="productContent">Beats Solo2 On Ear Headphones</p>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star checked"></span>
-                  <span class="fa fa-star"></span>
-                  <p class="price">$499 <s>$599</s></p>
-                </div>
-              </article>
-            </div>
-          </section>
         </div>
-    </div>
-      <hr>
-      <footer>
-        <!-- This is the footer with default 3 divs -->
-        <div class="mainWrapper">
-          <div class="col-1">
-            <img src="Assets/beep@2x.png">
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
-            </p>
-          </div>
-          <div class="col-2">
-            <h2>
-              Follow Us
-            </h2>
-            <p>
-              Since the 1500s. When an unknown printer took a galley of type and scrambled.
-            </p>
-            <ul>
-              <li><a href="#"><img src="Assets/facebook.png"></a></li>
-              <li><a href="#"><img src="Assets/twitter.png"></a></li>
-            </ul>
-          </div>
-          <div class="col-3">
-            <h2>Contact Us</h2>
-            <p>
-              My Company, 4578 Marmora Road, Glasgow<br>D04 89GR<br>Call us now: 0123-456-789<br>Email: support@whatever.com
-            </p>
-          </div>
-        </div>
-      </footer>
-      <hr>
-      <div class = "foot">
-        <div class="mainWrapper">
-          <div class= "copyrights">
-            &copy; 2021 Ecommerce site by www.beep.com
-          </div>
-          <div class= "payments">
-            <a href="#"><img src="Assets/Western-union.png"></a>
-            <a href="#"><img src="Assets/Group 19.png"></a>
-            <a href="#"><img src="Assets/Paypal.png"></a>
-            <a href="#"><img src="Assets/visa.png" height="26" width="39"></a>
-          </div>
-        </div>
-      </div>
-  </div>
-</body>
+
+        <!-- Footer Section -->
+        <hr>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <!-- About Us -->
+                        <div class="Aboutus">
+                            <img src="Assets/beep@2x.png">
+                            <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Follow Us -->
+                        <div class="Followus">
+                            <h2>
+                                Follow Us
+                            </h2>
+                            <p>
+                                Since the 1500s. When an unknown printer took a galley of type and scrambled.
+                            </p>
+                            <ul>
+                                <li><a href="#"><img src="Assets/facebook.png"></a></li>
+                                <li><a href="#"><img src="Assets/twitter.png"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <!-- Contact Us -->
+                        <div class="Contactus">
+                            <h2>Contact Us</h2>
+                            <p>
+                            My Company, 4578 Marmora Road, Glasgow<br>D04 89GR<br>Call us now: 0123-456-789<br>Email: support@whatever.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container">
+                <div class="row">
+                    <div class="col copyrights">
+                        &copy; 2021 Ecommerce site by www.beep.com
+                    </div>
+                    <div class="payments">
+                        <a href="#"><img src="Assets/Western-union.png"></a>
+                        <a href="#"><img src="Assets/Group 19.png"></a>
+                        <a href="#"><img src="Assets/Paypal.png"></a>
+                        <a href="#"><img src="Assets/visa.png" height="26" width="39"></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 
 </html>
